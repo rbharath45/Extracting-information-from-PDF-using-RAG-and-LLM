@@ -1,5 +1,5 @@
 AI-Driven Contextual Information Extraction and Query Response System
-Overview
+
 This project demonstrates an end-to-end pipeline for extracting, processing, and querying information from PDF documents using advanced AI models and vector databases. The system combines generative AI, embeddings, and reranking techniques to deliver accurate and contextually relevant answers to user queries.
 
 Features
