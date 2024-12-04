@@ -14,57 +14,13 @@ Cohere Rerank API: For improving the relevance of retrieved documents.
 SentenceTransformers: To generate embeddings for text chunks.
 ChromaDB: For persistent vector storage and querying.
 Python: The main programming language.
+
 Dependencies:
 google-generativeai
 cohere
 sentence-transformers
 chromadb
-Setup Instructions
-Clone the Repository
 
-bash
-Copy code
-git clone <repository-url>
-cd <repository-folder>
-Install Dependencies
-
-bash
-Copy code
-pip install google-generativeai cohere sentence-transformers chromadb
-Set Up API Keys
-
-Obtain an API key for Google Generative AI and Cohere Rerank API.
-Set them as environment variables:
-bash
-Copy code
-export API_KEY=<Your_Google_API_Key>
-export COHERE_API_KEY=<Your_Cohere_API_Key>
-Run the Code
-
-bash
-Copy code
-python main.py
-Usage
-Upload a PDF file.
-The system extracts content and stores it in chunks using a vector database.
-Query the system using natural language questions.
-Get responses with or without reranking for comparison.
-Key Functions
-Content Extraction: Breaks the PDF into titled sections.
-Embedding and Storage: Creates vector embeddings for efficient search.
-Query Answering:
-Baseline retrieval of documents.
-Reranked retrieval using Cohere.
-Context-based response generation.
-Performance Comparison: Compares results with and without reranking.
-Examples
-Query: "What is the capital of the United States?"
-
-Baseline: "Washington, D.C. is the capital of the United States."
-Reranked: "Washington, D.C. is the capital of the United States. It is a federal district."
-Query: "Explain the transport of food and substances in plants."
-
-Generates a detailed response using extracted context.
 Future Enhancements
 Support for multi-file PDF processing.
 Advanced error handling for unsupported file types.
